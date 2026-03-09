@@ -1,4 +1,4 @@
-﻿create schema dannys_diner;
+﻿﻿create schema dannys_diner;
 GO
 
 create table sales(
@@ -131,8 +131,3 @@ on sales.customer_id = members.customer_id
 where sales.order_date < '2021-01-31' and sales.order_date >= members.join_date
 group by sales.customer_id, menu.price, members.join_date 
 order by points desc
-
-
-
-
-
